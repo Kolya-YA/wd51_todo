@@ -1,0 +1,17 @@
+.add {
+    background-color: #444;
+    padding: 1rem;
+    color: #fff;
+
+    .add__form {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .add__block {
+
+        & > * {
+            display: block;
+        }
+    }
+}
