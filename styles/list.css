@@ -1,0 +1,25 @@
+.list {
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.list__filter {
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+.list__filter-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    & > * {
+        min-width: fit-content;
+        flex: 1;
+
+
+    }
+}

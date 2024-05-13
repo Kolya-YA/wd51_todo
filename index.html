@@ -34,41 +34,43 @@
                 <button type="button">Add to list</button>
             </form>
         </section>
-        <h2>Current shopping list</h2>
-        <section class="filter">
-            <h3>Filter</h3>
-            <div class="buttons">
-                <button type="button" id="not-btn">Not in cart</button>
-                <button type="button" id="in-btn">In cart</button>
-                <button type="button" id="full-btn">Full list</button>
-            </div>
-        </section>
         <section class="list">
-            <h3>List</h3>
-            <ul id="list">
-                <li>
-                    <label for="bought" class="visually-hidden">Is bought</label>
-                    <input type="checkbox" name="" id="bought">
-                    <span>Egg</span> <span>20 items.</span>
-                    <button type="button">Edit</button>
-                    <button type="button">Remove</button>
-                </li>
-                <li>
-                    <label for="bought" class="visually-hidden">Is bought</label>
-                    <input type="checkbox" name="" id="bought">
-                    <span>Milk</span> <span>3 l.</span>
-                    <button type="button">Edit</button>
-                    <button type="button">Remove</button>
-                </li>
-                <li>
-                    <label for="bought" class="visually-hidden">Is bought</label>
-                    <input type="checkbox" name="" id="bought">
-                    <span>Potato</span> <span>2 kg.</span>
-                    <button type="button">Edit</button>
-                    <button type="button">Remove</button>
-                </li>
-            </ul>
-            <p>Total 3 items</p>
+            <h2>Current shopping list</h2>
+            <div class="list__filter">
+                <h3>Filter</h3>
+                <div class="list__filter-btns">
+                    <button type="button" id="not-btn">Not in cart</button>
+                    <button type="button" id="in-btn">In cart</button>
+                    <button type="button" id="full-btn">Full list</button>
+                </div>
+            </div>
+            <div class="list__list">
+                <h3>List</h3>
+                <ul id="list">
+                    <li>
+                        <label for="bought" class="visually-hidden">Is bought</label>
+                        <input type="checkbox" name="" id="bought">
+                        <span>Egg</span> <span>20 items.</span>
+                        <button type="button">Edit</button>
+                        <button type="button">Remove</button>
+                    </li>
+                    <li>
+                        <label for="bought" class="visually-hidden">Is bought</label>
+                        <input type="checkbox" name="" id="bought">
+                        <span>Milk</span> <span>3 l.</span>
+                        <button type="button">Edit</button>
+                        <button type="button">Remove</button>
+                    </li>
+                    <li>
+                        <label for="bought" class="visually-hidden">Is bought</label>
+                        <input type="checkbox" name="" id="bought">
+                        <span>Potato</span> <span>2 kg.</span>
+                        <button type="button">Edit</button>
+                        <button type="button">Remove</button>
+                    </li>
+                </ul>
+                <p class="list__total">Total 3 items</p>
+            </div>
         </section>
     </main>
     <footer class="footer">
