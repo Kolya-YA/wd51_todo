@@ -7,7 +7,9 @@
 
 .list__filter {
     max-width: 400px;
+    margin-block-end: 1rem;
     margin-inline: auto;
+
 }
 
 .list__filter-btns {
@@ -24,28 +26,40 @@
     }
 }
 
-.list__list > #list {
-    padding: 0;
+.list__list {
+    max-width: 44ch;
 
-    li {
-        max-width: 44ch;
-        display: flex;
-        gap: .5rem;
-        padding-block: .3rem;
-        padding-inline: 1rem;
-        list-style: none;
+    margin-inline: auto;
 
-        button:first-of-type {
-            margin-inline-start: auto;
+    #list {
+        padding: 0;
+
+        li {
+            display: flex;
+            gap: .5rem;
+            padding-block: .3rem;
+            padding-inline: 1rem;
+            list-style: none;
+
+            button:first-of-type {
+                margin-inline-start: auto;
+            }
+        }
+
+        li:nth-of-type(odd) {
+            background-color: #3333;
+        }
+
+        li:nth-of-type(even) {
+            background-color: #444;
+            color: #fff;
         }
     }
 
-    li:nth-of-type(odd) {
-        background-color: #3333;
-    }
-
-    li:nth-of-type(even) {
-        background-color: #444;
-        color: #fff;
+    .list__total {
+        padding-block: .3rem;
+        padding-inline: 1rem;
+        text-align: end;
+        border: solid 1px #3333;
     }
 }
