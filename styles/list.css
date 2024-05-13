@@ -23,3 +23,29 @@
 
     }
 }
+
+.list__list > #list {
+    padding: 0;
+
+    li {
+        max-width: 44ch;
+        display: flex;
+        gap: .5rem;
+        padding-block: .3rem;
+        padding-inline: 1rem;
+        list-style: none;
+
+        button:first-of-type {
+            margin-inline-start: auto;
+        }
+    }
+
+    li:nth-of-type(odd) {
+        background-color: #3333;
+    }
+
+    li:nth-of-type(even) {
+        background-color: #444;
+        color: #fff;
+    }
+}
